@@ -20,7 +20,7 @@ const AppointmentForm = () => {
             "status": 'PENDING',
             time:new Date().toLocaleString()
         };
-        fetch('http://localhost:5000/allAppointment',{
+        fetch('https://murmuring-waters-32504.herokuapp.com/allAppointment',{
             method:'POST',
             headers:{
                 'Content-Type' : 'application/json'

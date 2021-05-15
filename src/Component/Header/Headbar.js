@@ -10,7 +10,7 @@ const Headbar = () => {
                     <div className="info">
                         <p className="mr-4 mt-4 color"><i class="fas fa-phone-alt mr-2"></i> Call : 01737019528</p>
                         <p className="mr-4 mt-4 color"><i class="fas fa-envelope-open mr-2"></i> debakor10@gmail.com</p>
-                        <p className="mr-4 mt-4 color"><i class="fas fa-map-marker-alt mr-2"></i> Zindabazar</p>
+                        <p className="mr-4 mt-4 color"><i class="fas fa-map-marker-alt mr-2"></i>Golapgonj</p>
                     </div>
                   </div>
                   <div className="col-md-4">

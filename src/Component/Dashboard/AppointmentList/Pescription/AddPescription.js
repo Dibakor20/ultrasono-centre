@@ -17,7 +17,7 @@ const AddPescription = () => {
             description:data.description,
             img:imageUrl,
         }
-        const url =`http://localhost:5000/addPescription`
+        const url =`https://murmuring-waters-32504.herokuapp.com/addPescription`
         console.log(pescriptionData)
         fetch(url, {
             method: 'POST', 

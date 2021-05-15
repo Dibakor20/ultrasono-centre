@@ -6,7 +6,7 @@ const AppointmentList = () => {
     const[appointmentList,setAppointmentList] = useState([])
     
     const loadAll = () =>{
-        fetch('http://localhost:5000/appointmentList')
+        fetch('https://murmuring-waters-32504.herokuapp.com/appointmentList')
         .then(res=>res.json())
         .then(data=>setAppointmentList(data))
      }

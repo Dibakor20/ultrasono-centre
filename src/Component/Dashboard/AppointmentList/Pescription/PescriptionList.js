@@ -5,7 +5,7 @@ const PescriptionList = () => {
     const[pescriptionList,setPescriptionList] = useState([])
     
     const loadAll = () =>{
-        fetch('http://localhost:5000/pescriptionList')
+        fetch('https://murmuring-waters-32504.herokuapp.com/pescriptionList')
         .then(res=>res.json())
         .then(data=>setPescriptionList(data))
      }
@@ -16,7 +16,7 @@ const PescriptionList = () => {
    
     const deletePescription =(id) =>{
         console.log()
-        fetch(`http://localhost:5000/deletePescription/${id}`, {
+        fetch(`https://murmuring-waters-32504.herokuapp.com/deletePescription/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

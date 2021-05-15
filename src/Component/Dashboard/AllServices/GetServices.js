@@ -15,7 +15,7 @@ const GetServices = () => {
             problem:data.problem,
 
         }
-        const url =`http://localhost:5000/addPatients`
+        const url =`https://murmuring-waters-32504.herokuapp.com/addPatients`
         fetch(url, {
             method: 'POST', 
             headers: {

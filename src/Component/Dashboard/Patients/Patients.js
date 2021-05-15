@@ -4,7 +4,7 @@ const Patients = () => {
     const[patientList,setPatientList] = useState([])
     
     const loadAll = () =>{
-        fetch('http://localhost:5000/patientsList')
+        fetch('https://murmuring-waters-32504.herokuapp.com/patientsList')
         .then(res=>res.json())
         .then(data=>setPatientList(data))
      }
@@ -14,7 +14,7 @@ const Patients = () => {
 
 
     const deletePatient =(id) =>{
-        fetch(`http://localhost:5000/deletePatient/${id}`, {
+        fetch(`https://murmuring-waters-32504.herokuapp.com/deletePatient/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

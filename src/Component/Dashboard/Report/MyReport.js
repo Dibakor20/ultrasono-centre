@@ -7,7 +7,7 @@ const MyReport = () => {
     const emailData = sessionStorage.getItem('email')
 
     useEffect(()=>{
-        fetch('http://localhost:5000/myPescription?email='+ emailData)
+        fetch('https://murmuring-waters-32504.herokuapp.com/myPescription?email='+ emailData)
         .then(res=>res.json())
         .then(data=> setReport(data))
       

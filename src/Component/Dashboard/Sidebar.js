@@ -11,7 +11,7 @@ const Sidebar = () => {
     const [isAdmin,setIsAdmin] = useState(false)
 
     const loadAllAdmin = () => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://murmuring-waters-32504.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email || emailData })
