@@ -1,0 +1,12 @@
+.service{
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.service-form{
+    background-color:#0843aa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+   
+}

@@ -1,0 +1,14 @@
+.about{
+    margin-top:80px;
+}
+
+.about-left img {
+    width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+.about-item{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}

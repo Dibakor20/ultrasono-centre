@@ -1,0 +1,36 @@
+.info{
+    display: flex;
+}
+.color{
+    color: #0843aa;
+    font-weight: 500;
+}
+.social-icon{
+    text-align: center;
+    float: right;
+    margin-top: 15px;
+}
+.social-icon ul li{
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    background:rgba(0, 0, 255, 0.808);
+    
+}
+
+.social-icon ul li i{
+    margin: 14px;
+   color:goldenrod;
+} 
+
+.social-icon ul li:hover{
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px;
+    transition: 0.5s;
+    color: blue !important;
+}
+.social-icon ul li i:hover{
+    color: blue;
+}
