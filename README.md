@@ -47,8 +47,6 @@ A full-stack app where you can  fix an appointment with your doctor. A doctor ca
 
 ✅ Firebase
 
-✅ Css.
-
 ✅ Heroku.
 
 # Live Link :
