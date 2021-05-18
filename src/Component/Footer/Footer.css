@@ -26,3 +26,10 @@
         height: 100%;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .last{
+        width: 150px;
+        height: 200px;
+    }
+}

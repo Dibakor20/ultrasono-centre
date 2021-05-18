@@ -109,7 +109,7 @@ const Login = () => {
                 <div class="user_card">
                     <div class="d-flex justify-content-center">
             {
-                !newUserInfo ? <h3>Sign In</h3> : <h3>Create an account</h3>
+                !newUserInfo ? <h3 className="text-white">Sign In</h3> : <h3 className="text-white">Create an account</h3>
             }
         </div>
         <div class="d-flex justify-content-center form_container">
@@ -145,7 +145,7 @@ const Login = () => {
                 <div class="form-group">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customControlInline"/>
-                        <label class="custom-control-label" for="customControlInline">Remember me</label>
+                        <label class="custom-control-label text-white" for="customControlInline">Remember me</label>
                     </div>
                 </div>
                     <div class="d-flex justify-content-center mt-3 login_container">
@@ -156,14 +156,14 @@ const Login = () => {
 
         <div class="mt-4">
             {
-                newUserInfo ? <div class="d-flex justify-content-center links">
-                Already have an account? <a href="#" class="ml-2" onClick={()=>setNewUserInfo(!newUserInfo)} name="newUserInfo" >Login</a>
-            </div> : <div class="d-flex justify-content-center links">
-                Don't have an account? <a href="#" class="ml-2" onClick={()=>setNewUserInfo(!newUserInfo)} name="newUserInfo" >Sign Up</a>
+                newUserInfo ? <div class="d-flex justify-content-center links text-white">
+                Already have an account? <a href="#" class="ml-2 text-white" onClick={()=>setNewUserInfo(!newUserInfo)} name="newUserInfo" >Login</a>
+            </div> : <div class="d-flex justify-content-center links text-white">
+                Don't have an account? <a href="#" class="ml-2 text-white" onClick={()=>setNewUserInfo(!newUserInfo)} name="newUserInfo" >Sign Up</a>
             </div>
             }
             <div class="d-flex justify-content-center links">
-                <a href="#">Forgot your password?</a>
+                <a href="#" className="text-white">Forgot your password?</a>
              </div>
             </div>
             </div>

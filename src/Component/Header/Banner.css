@@ -1,8 +1,8 @@
 .banner{
     background-image: url(../../images/doctor.jpg);
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
-    height:90vh;
+    height:100vh;
     background-repeat: no-repeat;
     width: 100%;
 }
@@ -13,8 +13,7 @@
     color:maroon !important;  
     font-size: 18px;
     display: inline-block;
-    margin-top: 120px;
- 
+    margin-top: 140px;
  }
 .left-content h4{
     font-family: 'Alfa Slab One', cursive;
@@ -36,5 +35,18 @@
 @media only screen and (max-width: 600px){
     .left-content h1{
         font-size: 65px !important;
-    } 
+    }
+    .banner{
+        height: 90vh;
+    }
+   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .banner{
+        height: 60vh;
+    }
+  
+    
 }

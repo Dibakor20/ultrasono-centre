@@ -1,6 +1,9 @@
 .info{
     display: flex;
 }
+.info p{
+    margin-right: 30px;
+}
 .color{
     color: #0843aa;
     font-weight: 500;
@@ -34,3 +37,12 @@
 .social-icon ul li i:hover{
     color: blue;
 }
+
+@media only screen and (max-width: 600px) {
+    .info p {
+        margin-right:5px !important;
+    }
+}
+
+
+  
