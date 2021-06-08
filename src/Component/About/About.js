@@ -13,9 +13,9 @@ const About = () => {
                       </div>    
                 </div>
                 <div className="col-lg-6">
-                    <h2 className="about-item">গোলাপগঞ্জ আল্ট্রাসনো সেন্টার সম্পর্কে জানুন</h2>
-                    <p>গোলাপগন্জবাসীর চিকিৎসা সেবার মানোন্নয়নের লক্ষ্যে চৌমুহনীর জকিগঞ্জ রোডে প্রতিষ্ঠিত হয়েছে ‘গোলাপগন্জ আলট্রাসনো সেন্টার‘- যার সার্বিক পরিচালনায় আছেন অত্র এলাকার কৃতি ছাত্র ডা:টিটু চন্দ্র আচার্য্য।</p>
-                    <p>শুধুমাত্র রোগীদের সর্বাধিক স্বস্তি নিশ্চিত করতে আমাদের সেন্টার এর সকল আয়োজন। মনোরম ও স্বাচ্ছন্দময় পরিবেশে আপনার শারীরিক অবস্থার হালনাগাদ করতে চলে আসুন গোলাপগঞ্জ আল্ট্রাসনো সেন্টার এ। হেলথ চেক আপ এর মাধ্যমে রোগীর শরীরে সমস্যা থেকে থাকলে তার একটি প্রাথমিক ধারণা পাওয়া সম্ভবপর হয়ে থাকে যা থেকে রোগীর সমসসার প্রাথমিক পর্যায় থেকেই চিকিৎসা শুরু করা সম্ভবপর হয়ে থাকে । এই সুবিধা সর্বাধিক নিরাপত্তা ও স্বস্তির সাথে পেতে চলে আসুন গোলাপগঞ্জ আল্ট্রাসনো সেন্টার এ।</p>
+                    <h2 className="about-item">Golapganj Ultrasono Center</h2>
+                    <p> The Golapganj Ultrasono Center has been set up on Zakiganj Road in Chaumuhani with the aim of improving the quality of medical services for the people of Golapganj.</p>
+                    <p> All the arrangements of our center only to ensure maximum comfort to the patients. Come to Golapganj Ultrasono Center to update your physical condition in a pleasant and comfortable environment. Through health check-up, it is possible to get a basic idea of ​​the patient's problem, from which it is possible to start treatment from the initial stage of the patient's problem. Come to Golapganj Ultrasono Center to get this facility with maximum safety and comfort. </p>
                 </div>
             </div>
         </div>   

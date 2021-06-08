@@ -31,8 +31,8 @@ const AppointmentForm = () => {
 
             if(data){
                 
-                alert('You Have Order Successfully')
-                history.push('/dashboard')
+                alert('You Have Appointmented Successfully')
+                history.push('/home')
             }        
     };
 
