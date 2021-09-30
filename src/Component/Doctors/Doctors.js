@@ -1,22 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import './Doctors.css'
 
-const doctors = [
+const doctors = [ 
     {
        img:"https://disin-react.hibootstrap.com/images/doctors/doctor2.jpg",
-       name:"Dr.Titu Acharjee",
-       Position:"CHILD PEDIATRIC" 
+       name:"ডাঃটিটু চন্দ্র আচার্য্য",
+       Position:"শিশুরোগ বিশেষজ্ঞ" 
     },
     {
         img:"https://disin-react.hibootstrap.com/images/doctors/doctor1.jpg",
-        name:"Dr.Meenakshi Das",
-        Position:"CHILD PEDIATRIC" 
+        name: "ডাঃমীনাক্ষী দাস",
+        Position:"শিশুরোগ বিশেষজ্ঞ" 
     },
-    {
-        img:"https://disin-react.hibootstrap.com/images/doctors/doctor2.jpg",
-        name:"Dr.Titu Acharjee",
-        Position:"CHILD PEDIATRIC" 
-    }
+   
 ]    
 
 const Doctors = () => {
@@ -26,14 +22,15 @@ const Doctors = () => {
        },[]) 
     return (
         <>
-           <div className="container doctor">
-               <h1 className="about-item mb-5">Meet Our Doctors</h1>
+            <div className="container doctor">
+                <p className="banner-semi-title text-center">চিকিৎসক</p>
+               <h3 className="banner-title text-center mb-5">স্বাস্থ্যসেবা বিশেষজ্ঞ</h3>
                <div className="row">
                  {
-                     doctor.map(dr=><div className="col-md-4">
+                     doctor.map(dr=><div className="col-md-6">
                          <div className="doctor-item">
                              <div className="doctor-top">
-                             <img src={dr.img} alt="" className="w-100"/>
+                             <img src={dr.img} alt="" className="w-50"/>
                              </div>
                              <div className="doctor-bottom">
                                 <h3>{dr.name}</h3>
