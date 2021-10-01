@@ -1,52 +1,37 @@
-.banner{
-    background-image: url(../../images/doctor.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    height:100vh;
-    background-repeat: no-repeat;
-    width: 100%;
+
+.carousel-caption {
+    bottom: 35% !important;
+    right: 15% !important;
 }
-.left-content h3{
-    padding: 10px;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    color:maroon !important;  
-    font-size: 18px;
-    display: inline-block;
-    margin-top: 140px;
- }
-.left-content h4{
-    font-family: 'Alfa Slab One', cursive;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color:midnightblue; 
-    font-size: 28px;
-    text-shadow: 3px 3px #fee8bc;
-    
+.bg-w{
+    width: 100% !important;
+    height: 600px !important;
 }
-.left-content h3{
-    font-family: 'Alfa Slab One', cursive;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #3d2514; 
-    font-size: 43px;
-    text-shadow: 2px 2px #fee8bc;
+.banner-semi-title{
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+    color: #20bdd1;
 }
-@media only screen and (max-width: 600px){
-    .left-content h1{
-        font-size: 65px !important;
-    }
-    .banner{
-        height: 90vh;
-    }
-   
+.banner-title{
+    font-weight: 700;
+    color: #02123a;
+    font-family: roboto slab,serif;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+
+@media only screen and (max-width: 600px){
   
-    .banner{
-        height: 60vh;
-    }
-  
-    
+    .carousel-caption {
+        bottom: 0% !important;
+        right: 20% !important;
+    } 
 }
+@media only screen and (max-width: 1100px){
+  
+    .carousel-caption {
+        bottom: 40% !important;
+        right: 20% !important;
+    } 
+}
+

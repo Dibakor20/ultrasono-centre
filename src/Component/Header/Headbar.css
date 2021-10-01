@@ -1,12 +1,13 @@
 .info{
     display: flex;
+    justify-content: flex-end;
 }
 .info p{
     margin-right: 30px;
 }
 .color{
-    color: #0843aa;
-    font-weight: 500;
+    color: #35405c;
+    font-size: 15px;
 }
 .social-icon{
     text-align: center;
@@ -17,26 +18,42 @@
     list-style: none;
     display: inline-block;
     width: 40px;
-    height: 40px;
-    border: 1px solid gray;
-    background:rgba(0, 0, 255, 0.808);
-    
+    height: 40px;  
 }
 
 .social-icon ul li i{
-    margin: 14px;
-   color:goldenrod;
-} 
+    /* margin: 14px;
+   color:#fff; */
+   display: inline-block;
+   width: 35px;
+   height: 35px;
+   line-height: 35px;
+   text-align: center;
+   color: #20bdd1;
+   background-color: #e0f8fc;
+   border-radius: 5px;
+   font-size: 15px;
+   transition: .5s;
 
-.social-icon ul li:hover{
-    background: #fff;
-    box-shadow: 0px 0px 5px 0px;
-    transition: 0.5s;
-    color: blue !important;
+} 
+.header-icon{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #20bdd1;
+    background-color: #e0f8fc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: .5s;
 }
-.social-icon ul li i:hover{
-    color: blue;
+.header-title{
+    font-weight: 700;
+    color: #02123a;
+    font-family: roboto slab,serif;
 }
+
 
 @media only screen and (max-width: 600px) {
     .info p {

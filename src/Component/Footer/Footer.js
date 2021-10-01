@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.png'
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="container">
                         <div className="row ">
                             <div className="col-md-3 mt-5">
-                                <img src={logo} alt="" className="last"/>
+                                <img src={logo} alt="" className=" w-50"/>
                             </div>
                             <div className="col-md-3 mt-5">
                               <h5>GET IN TOUCH</h5>
