@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { UserContext } from "../../App";
@@ -9,6 +9,12 @@ const Navbar = () => {
     useContext(UserContext);
   const location = useLocation();
   const history = useHistory();
+  const [screenWidth, setScreenWidth] = useState();
+
+  useEffect(() => {
+    setScreenWidth(window.screen.width);
+  }, []);
+
 
   const signOut = () => {
     const logout = window.confirm("Are you sure you want to Log Out?");
@@ -48,20 +54,20 @@ const Navbar = () => {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto mx-5">
-          <li class="nav-item active">
-                <Link class="nav-link" to="/home">
+            <li class="nav-item active">
+              <Link class="nav-link" to="/home">
                 <i class="fas fa-home "></i>   হোম <span class="sr-only">(current)</span>
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/aboutDetails" class="nav-link" href="#">
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/aboutDetails" class="nav-link" href="#">
                 <i class="fas fa-info-circle"></i>  আমাদের সম্পর্কে
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/doctorsDetails" class="nav-link" href="#">
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/doctorsDetails" class="nav-link" href="#">
                 <i class="fas fa-users"></i>  ডাক্তার
-                </Link>
+              </Link>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -73,11 +79,11 @@ const Navbar = () => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-              <i class="fas fa-briefcase-medical"></i>  সার্ভিস
+                <i class="fas fa-briefcase-medical"></i>  সার্ভিস
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">
-                আল্ট্রাসনোগ্রাফি
+                  আল্ট্রাসনোগ্রাফি
                 </a>
                 <a class="dropdown-item" href="#">
                   চেম্বার
@@ -88,50 +94,42 @@ const Navbar = () => {
                 </a>
               </div>
             </li>
-              <li class="nav-item">
-                <Link to="/blogDetails" class="nav-link" href="#">
+            <li class="nav-item">
+              <Link to="/blogDetails" class="nav-link" href="#">
                 <i class="fas fa-blog"></i>  ব্লগ
-                </Link>
-              </li>
-            
-              <li class="nav-item">
-                <Link to="/contact" class="nav-link" href="#">
-                <i class="fas fa-envelope"></i>  যোগাযোগ
-                </Link>
-              </li>
+              </Link>
+            </li>
 
-            
+            <li class="nav-item">
+              <Link to="/contact" class="nav-link" href="#">
+                <i class="fas fa-envelope"></i>  যোগাযোগ
+              </Link>
+            </li>
           </ul>
 
-        
-            <div class="social-icon">
-              <ul className="d-flex justify-content-lg-end justify-content-center mx-5">
-              
-              <li class="nav-item mr-5">
-                <Link to="/contact" class="nav-link" href="#">
-                
-                </Link>
-              </li>
-               
-                <a href="" className="ml-5 mr-2">
-                  <li>
-                    <i class="fab fa-facebook-f"></i>
-                  </li>
-                </a>
-                <a href="" className="mr-2">
-                  <li>
-                    <i class="fab fa-twitter"></i>
-                  </li>
-                </a>
-                <a href="" className="mr-2">
-                  <li>
-                    <i class="fab fa-linkedin"></i>
-                  </li>
-                </a>
-               
-              </ul>
-            </div>
-        
+
+          <div class={`social-icon ${screenWidth < 576 ? 'float-none' : 'float-right'}`}>
+            <ul className="d-flex justify-content-lg-end justify-content-center mx-5">
+
+              <a href="" className="mr-2">
+                <li>
+                  <i class="fab fa-facebook-f"></i>
+                </li>
+              </a>
+              <a href="" className="mr-2">
+                <li>
+                  <i class="fab fa-twitter"></i>
+                </li>
+              </a>
+              <a href="" className="mr-2">
+                <li>
+                  <i class="fab fa-linkedin"></i>
+                </li>
+              </a>
+
+            </ul>
+          </div>
+
         </div>
       </nav>
     </>
