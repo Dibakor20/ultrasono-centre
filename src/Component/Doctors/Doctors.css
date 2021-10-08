@@ -1,19 +1,16 @@
-.doctor{
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
 .doctor-item {
-    margin-bottom: 30px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 0 20px 0 #ddd;
-    border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 #ddd;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.doctor-title {
+  color: #20bdd1;
 }
 
-.doctor-item .doctor-bottom h3{
-    display: block;
-    font-weight: 600;
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #232323;
+.doctor-item:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 25px 10px rgb(0 0 0 / 10%);
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
 }
