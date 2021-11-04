@@ -12,7 +12,7 @@ const DoctorsDetails = () => {
         <div className="appointment-banner">
              <div className="appointment-feature">
                  <div className="title">
-                 <h1 className="">Doctors</h1>
+                 <h1 className="">চিকিৎসক</h1>
                  </div>
              </div>
              
