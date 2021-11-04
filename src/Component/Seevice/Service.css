@@ -1,5 +1,6 @@
 .service-form{
-    background-color:#20bdd1;
+    /* background-color:#20bdd1; */
+    background-image: url(https://images.unsplash.com/photo-1551076805-e1869033e561?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG9zcGl0YWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;

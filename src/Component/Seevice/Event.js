@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import './Event.css'
 const Event = (props) => {
-    const { img, name, description } = props.event
+    const { img, name, description,} = props.event
     return (
         <div className='service-card mb-4'>
             <Link to="/appointment">
@@ -11,7 +11,7 @@ const Event = (props) => {
                     <span></span>
                     <span></span>
                     <span></span>
-                    <i class="fas fa-stethoscope icon"></i>
+                    <img src={img} alt="" className="images" />
                     <div class="card-body text-dark">
                         <h5 class="card-title text-center font-weight-bold">{name}</h5>
                         <p class="card-text text-center">{description}</p>

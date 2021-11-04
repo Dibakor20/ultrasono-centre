@@ -5,6 +5,12 @@
 .service-card {
   transition: 0.5s !important;
 }
+.images{
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
 
 .bottom span {
   position: absolute;
