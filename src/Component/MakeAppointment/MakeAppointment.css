@@ -5,12 +5,12 @@
     font-size: 15px;
     font-weight: 500;
     padding: 10px 24px;
-    background-color:#0843aa;
+    background-color:lightseagreen;
     color: white;
     transition: all .4s ease;
     border: 2px solid white;
 }
 .main-button:hover{
-    background-color:#f9004fea;
+    background-color:rgb(24, 231, 221);
     color: white;
 }
