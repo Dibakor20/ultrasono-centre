@@ -12,12 +12,13 @@ const BlogDetails = () => {
         <div className="appointment-banner">
              <div className="appointment-feature">
                  <div className="title">
-                 <h1 className="">Blog</h1>
+                 <h1 className="">ব্লগ </h1>
                  </div>
              </div>
              
-        </div>
-        <Blog/>   
+            </div>
+            <div className="mt-5"><Blog/></div>
+         
        <Footer/>
         </>
     );

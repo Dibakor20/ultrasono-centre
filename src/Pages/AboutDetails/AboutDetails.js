@@ -12,7 +12,7 @@ const AboutDetails = () => {
         <div className="appointment-banner">
              <div className="appointment-feature">
                  <div className="title">
-                 <h1 className="">About</h1>
+                 <h1 className="">আমাদের সম্পর্কে</h1>
                  </div>
              </div>
              

@@ -32,7 +32,7 @@ const AppointmentForm = () => {
             if(data){
                 
                 alert('You Have Appointmented Successfully')
-                history.push('/home')
+                history.push('/dashboard')
             }        
     };
 
@@ -43,28 +43,28 @@ const AppointmentForm = () => {
               <div className="row">
                   <div className="col-md-6">
                   <div className="service-form">
-                      <h1 className="appointment-title">Book Your Appointment</h1>
+                      <h1 className="banner-title">অ্যাপয়েন্টমেন্ট বুকিং করুন</h1>
                        <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-group">
-                        <input type="text" value={sessionStorage.getItem('displayName')} {...register("name", { required: true })} placeholder="Your Name" className="form-control" />
-                        {errors.name && <span className="text-danger">This field is required</span>}
+                        <input type="text" value={sessionStorage.getItem('displayName')} {...register("name", { required: true })} placeholder="নাম" className="form-control" />
+                        {errors.name && <span className="text-danger">খালি ঘর পূরণ করুন</span>}
 
                     </div>
                    
                     <div className="form-group">
-                        <input type="email"  value={ sessionStorage.getItem('email')} {...register("email", { required: true })} placeholder="Email" className="form-control" />
-                        {errors.email && <span className="text-danger">This field is required</span>}
+                        <input type="email"  value={ sessionStorage.getItem('email')} {...register("email", { required: true })} placeholder="ইমেইল" className="form-control" />
+                        {errors.email && <span className="text-danger">খালি ঘর পূরণ করুন</span>}
                     </div>
                     <div className="form-group">
-                        <input type="number" {...register("phone", { required: true })} placeholder="Phone Number" className="form-control" />
-                        {errors.phone && <span className="text-danger">This field is required</span>}
+                        <input type="number" {...register("phone", { required: true })} placeholder="মোবাইল নাম্বার" className="form-control" />
+                        {errors.phone && <span className="text-danger">খালি ঘর পূরণ করুন</span>}
                     </div>
                    
                     <div class="form-group">
                         
                         <select className="form-control" {...register("service", { required: true })} ><br/>
-                        {errors.service && <span className="error">This field is required</span>}
-                        <option selected disabled>Select Your Service</option>
+                        {errors.service && <span className="error">খালি ঘর পূরণ করুন</span>}
+                        <option selected disabled>সেবা সমূহ</option>
                         <option>Ultrasonography</option> 
                         <option>Chember</option> 
                         <option>Others</option> 
@@ -73,33 +73,33 @@ const AppointmentForm = () => {
 
                         <div className="form-group">
                         <input type="date" {...register("date", { required: true })} placeholder="Date" className="form-control" />
-                        {errors.email && <span className="text-danger">This field is required</span>}
+                        {errors.email && <span className="text-danger">খালি ঘর পূরণ করুন</span>}
                     </div>
 
                     <div className="form-group row">
                         <div className="col-4">
 
                             <select className="form-control" {...register("gender", { required: true })}>
-                                <option disabled={true} value="Not set">Select Gender</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Not set">Other</option>
+                                <option disabled={true} value="Not set">পরিচয়</option>
+                                <option value="Male">ছেলে</option>
+                                <option value="Female">মেয়ে</option>
+                                <option value="Not set">অন্যান্য</option>
                             </select>
-                            {errors.gender && <span className="text-danger">This field is required</span>}
+                            {errors.gender && <span className="text-danger">খালি ঘর পূরণ করুন</span>}
 
                         </div>
                         <div className="col-4">
-                            <input {...register("age", { required: true })} className="form-control" placeholder="Your Age" type="number" />
-                            {errors.age && <span className="text-danger">This field is required</span>}
+                            <input {...register("age", { required: true })} className="form-control" placeholder="বয়স" type="number" />
+                            {errors.age && <span className="text-danger">খালি ঘর পূরণ করুন</span>}
                         </div>
                         <div className="col-4">
-                            <input {...register("weight", { required: true })} className="form-control"  placeholder="Weight" type="number" />
-                            {errors.weight && <span className="text-danger">This field is required</span>}
+                            <input {...register("weight", { required: true })} className="form-control"  placeholder="ওজন" type="number" />
+                            {errors.weight && <span className="text-danger">খালি ঘর পূরণ করুন</span>}
                         </div>
                     </div>
 
                     <div className="form-group ">
-                        <button type="submit" className="btn btn-danger d-block mx-auto px-5 mt-5">Submit</button>
+                        <button type="submit" className="btn btn-danger d-block mx-auto px-5 mt-5">জমা দিন</button>
                     </div>
                 </form>
           </div> 
@@ -107,26 +107,26 @@ const AppointmentForm = () => {
                   <div className="colmd-6">
                       <div className="appointment-item-two-right">
                     <div className="appointment-item-content">
-                        <h2 className="working">Working Hour</h2>
+                        <h2 className="banner-title">চেম্বার</h2>
                         <ul>
                             <li>
-                                <p>Saturday <span className="ml-5">9.00 am - 8.00 pm</span> </p> 
+                                <p>শনিবার <span className="ml-5">সকাল ৯.০০ - রাত ৮.০০</span> </p> 
                             </li>
                             <li>
-                                <p>Sunday <span className="ml-5">9.00 am - 8.00 pm</span> </p> 
+                                <p>রবিবার <span className="ml-5">সকাল ৯.০০ - রাত ৮.০০</span> </p> 
                             </li>
                             <li>
-                                <p>Monday <span className="ml-5">9.00 am - 8.00 pm</span> </p> 
+                                <p>সোমবার<span className="ml-5">সকাল ৯.০০ - রাত ৮.০০</span> </p> 
                             </li>
                             <li>
-                                <p>Tuesday <span className="ml-5">9.00 am - 8.00 pm</span> </p> 
+                                <p>মঙ্গলবার<span className="ml-5">সকাল ৯.০০ - রাত ৮.০০</span> </p> 
                             </li>
                             <li>
-                                <p>Wednesday <span className="ml-4">9.00 am - 8.00 pm</span> </p> 
+                                <p>বুধবার   <span className="ml-5">সকাল ৯.০০ - রাত ৮.০০</span> </p> 
                             </li>
                             <li>
-                                <p>Thursday<span className="ml-5">9.00 am - 8.00 pm</span> </p> 
-                            </li>
+                                <p>বৃহস্পতিবার<span className="ml-4">সকাল ৯.০০ - রাত ৮.০০</span> </p> 
+                                    </li>
                             
                         </ul>
                     </div>

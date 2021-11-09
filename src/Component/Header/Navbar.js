@@ -82,16 +82,16 @@ const Navbar = () => {
                 <i class="fas fa-briefcase-medical"></i>  সার্ভিস
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
+                <Link class="dropdown-item" to="/appointment">
                   আল্ট্রাসনোগ্রাফি
-                </a>
-                <a class="dropdown-item" href="#">
+                </Link>
+                <Link class="dropdown-item" href="/appointment">
                   চেম্বার
-                </a>
+                </Link>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <Link class="dropdown-item" to="/appointment">
                   বুক ভিডিও কল
-                </a>
+                </Link>
               </div>
             </li>
             <li class="nav-item">
