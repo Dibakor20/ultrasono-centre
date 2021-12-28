@@ -29,8 +29,8 @@ const Banner = () => {
             <img src={bg2} class="d-block bg-w" alt="..." />
             <div class="carousel-caption d-md-block">
               <p className="banner-semi-title">সেবাসমূহ </p>
-              <h3 className="banner-title">আপনার নতুন হাসি এখান থেকে শুরু হোক</h3>
-              <p className="text-dark mt-3">আমাদের আল্ট্রাসনো সেন্টার এর কর্মীবৃন্দ আপনার সমস্যা ও চাহিদা অনুযায়ী <br />আপনার জন্য প্রযোজ্য হেলথ চেক-আপ প্রোগ্রামটি নির্ধারণে সহায়তা করবে।</p>
+              <h3 className="banner-title">আপনার হাসি এখান থেকে শুরু হোক</h3>
+              <p className="text-dark mt-3">আমাদের আল্ট্রাসনো সেন্টার এর কর্মীবৃন্দ আপনার সমস্যা ও চাহিদা অনুযায়ী <br />হেলথ চেক-আপ প্রোগ্রামটি নির্ধারণে সহায়তা করবে।</p>
             </div>
           </div>
           <div class="carousel-item">
